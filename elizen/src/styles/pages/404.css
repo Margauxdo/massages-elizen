@@ -1,0 +1,36 @@
+.Error404 {
+    background-image: url('../assets/Error404.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+.Error404 p, .Error404 a{
+    color: #efd396;
+    font-size: 20px;
+}
+.Error404 a{
+    text-decoration: none;
+}
+.Error404 a:hover{
+    color:#ebe2ce;
+}
+header{
+    max-width: 1800px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+
+}
+.logoBeige img{
+    width: 20vh;
+    position: relative;
+    bottom: 300px;
+
+}
