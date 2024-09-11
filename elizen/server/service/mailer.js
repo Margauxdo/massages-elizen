@@ -4,15 +4,15 @@ const nodemailer = require('nodemailer');
 const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-        user: 'massages-elizen@gmail.com',
-        pass: 'your-email-password'
+        user: 'margauxdoisy@gmail.com',
+        pass: 'IsaacLeonie.03'
     }
 });
 
 // Fonction pour envoyer un email
 const sendEmail = (data) => {
     const mailOptions = {
-        from: 'massages-elizen@gmail.com',
+        from: 'margauxdoisy@gmail.com',
         to: 'recipient-email@gmail.com',
         subject: 'Formulaire de contact',
         text: `

@@ -3,6 +3,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const fs = require('fs');
 const path = require('path');
+const sendEmail = require('../server/service/mailer');
 
 const app = express();
 const port = 5000;
@@ -12,28 +13,31 @@ app.use(cors());
 app.use(bodyParser.json());
 
 // Route pour gérer la soumission du formulaire
-app.post('/api/submit', (req, res) => {
+app.post('/api/submit', async (req, res) => {
     const data = req.body;
 
-    // Spécifie le chemin du fichier où les données seront enregistrées
+    // Sauvegarder les données dans un fichier (si nécessaire)
     const filePath = path.join(__dirname, 'data.txt');
-
-    // Formate les données du formulaire
     const formattedData = `
         name: ${data.name}
         firstname: ${data.firstname}
         phone: ${data.phone}
         mail: ${data.mail}
-        message: ${data.textarea}
+        message: ${data.message}
     `;
 
-    // Écrire les données dans le fichier
-    fs.writeFile(filePath, formattedData, (err) => {
+    fs.writeFile(filePath, formattedData, async (err) => {
         if (err) {
             console.error('Error writing to file', err);
             res.status(500).send('Error writing to file');
         } else {
-            res.send('Form data received and file created');
+            try {
+                await sendEmail(data);
+                res.send('Form data received, file created, and email sent');
+            } catch (error) {
+                console.error('Error sending email', error);
+                res.status(500).send('Error sending email');
+            }
         }
     });
 });
@@ -42,3 +46,4 @@ app.post('/api/submit', (req, res) => {
 app.listen(port, () => {
     console.log(`Server running at http://localhost:${port}`);
 });
+
