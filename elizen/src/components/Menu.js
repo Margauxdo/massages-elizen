@@ -5,6 +5,7 @@ const Menu = () => {
     return (
         <div className="nav">
             <ul>
+                <li><Link to="/">HomePage</Link></li>
                 <li><Link to="/massages">Massages</Link></li>
                 <ul>
                     <li><Link to="/massages">Amma assis</Link></li>

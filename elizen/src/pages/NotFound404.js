@@ -2,6 +2,7 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import '../styles/pages/404.css';
 import LogoBeige from "../components/LogoBeige";
+import Footer from "../components/Footer";
 
 const NotFound404 = () => {
     return (
@@ -16,6 +17,11 @@ const NotFound404 = () => {
                 <p><Link to="/">Vous pouvez retourner à la page d'acceuil</Link></p>
 
             </main>
+
+
+            <div className="footer-container">
+                <Footer/>
+            </div>
 
 
         </div>
