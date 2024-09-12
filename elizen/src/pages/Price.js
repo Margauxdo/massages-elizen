@@ -1,7 +1,8 @@
 import React from 'react';
-import Menu from "../components/Menu";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
+import PricePart from "../components/PricePart";
+import PricePro from "../components/PricePro";
 
 const Price = () => {
     return (
@@ -12,6 +13,12 @@ const Price = () => {
             </div>
             <div className="title">
                 <h2>Tarifs</h2>
+            </div>
+            <div className="part">
+                <PricePart/>
+            </div>
+            <div className="pro">
+                <PricePro/>
             </div>
 
 

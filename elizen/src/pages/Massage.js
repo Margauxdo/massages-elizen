@@ -9,6 +9,7 @@ import Reflexologie from "../components/Reflexologie";
 import Californiens from "../components/Californiens";
 import Pierres_chaudes from "../components/Pierres_chaudes";
 import Ayurvedique from "../components/Ayurvedique";
+import BandeauMassage from "../components/BandeauMassage";
 
 const Massage = () => {
     return (
@@ -16,6 +17,9 @@ const Massage = () => {
             <div className="header_bar">
                 <Header/>
 
+            </div>
+            <div className="bandeau-massg">
+                <BandeauMassage/>
             </div>
             <div className="massage_intro">
                 <h2>L'Art du Massage : Un Voyage de Bien-Être et de Sérénité</h2>

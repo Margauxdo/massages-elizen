@@ -4,7 +4,7 @@ const AmmaAssis = () => {
     return (
         <div className="AmmaAssis">
             <h3>Amma Assis : un bien-être assis</h3>
-            <img className="img_amma_assis" src="#" alt="img_amma_assis"/>
+            <img className="img_amma_assis" src="../amma.png" alt="img_amma_assis"/>
             <p>
                 Le massage Amma assis se pratique sans huile, ce qui permet de le recevoir sans avoir à se dévêtir. Installé confortablement sur une chaise de massage spécialement conçue pour offrir un maximum d'ergonomie, le salarié profite pleinement des bienfaits de cette technique relaxante.
 
