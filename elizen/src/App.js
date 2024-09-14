@@ -5,6 +5,7 @@ import Massage from "./pages/Massage";
 import Price from "./pages/Price";
 import Contact from "./pages/Contact";
 import NotFound404 from "./pages/NotFound404";
+import './styles/pages/styles.css'
 
 
 function App() {
