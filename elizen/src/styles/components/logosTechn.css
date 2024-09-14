@@ -16,7 +16,7 @@
 
 
 .logotechniques li {
-    margin: 0 10px;
+    margin: 0 30px;
     animation: rotateAnimation 3s ease-in-out forwards;
 }
 
@@ -49,8 +49,8 @@
 }
 
 .logotechniques img {
-    width: 160px;
-    height: 160px;
+    width: 130px;
+    height: 130px;
     object-fit: cover;
     transition: transform 0.5s ease-in-out;
 }
