@@ -1,0 +1,141 @@
+.logotechniques {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.logotechniques ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+
+.logotechniques li {
+    margin: 0 10px;
+    animation: rotateAnimation 3s ease-in-out forwards;
+}
+
+.logo-1 {
+    animation-delay: 0.5s;
+}
+
+.logo-2 {
+    animation-delay: 1s;
+}
+
+.logo-3 {
+    animation-delay: 1.5s;
+}
+
+.logo-4 {
+    animation-delay: 2s;
+}
+
+.logo-5 {
+    animation-delay: 2.5s;
+}
+
+.logo-6 {
+    animation-delay: 3s;
+}
+
+.logo-7 {
+    animation-delay: 3.5s;
+}
+
+.logotechniques img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out;
+}
+
+
+@keyframes rotateAnimation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Media Queries pour les écrans de tablette horizontale (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .logotechniques {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .logotechniques ul {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logotechniques li {
+        margin: 10px;
+    }
+
+    .logotechniques img {
+        width: 140px;
+        height: 140px;
+    }
+}
+
+/* Media Queries pour les écrans de tablette verticale (max-width: 768px) */
+@media (max-width: 768px) {
+    .logotechniques {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logotechniques ul {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logotechniques li {
+        margin: 10px 0;
+    }
+
+    .logotechniques img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+/* Media Queries pour les écrans de téléphone (max-width: 480px) */
+@media (max-width: 480px) {
+    .logotechniques {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logotechniques ul {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logotechniques li {
+        margin: 10px 0;
+    }
+
+    .logotechniques img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+
+
+
+
