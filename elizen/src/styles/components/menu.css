@@ -1,0 +1,104 @@
+
+.nav {
+    padding: 10px;
+    max-width: 1300px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+}
+
+.main-menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main-menu > li {
+    margin-right: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.main-menu > li > a {
+    color: #286d89;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.main-menu > li:hover > a {
+    border-top: #286d89 1px solid;
+}
+
+/* Styles pour le sous-menu */
+.submenu {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    border: 1px solid white;
+    width: 200px;
+    z-index: 1;
+}
+
+.submenu li {
+    padding: 5px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.submenu li:last-child {
+    border-bottom: none;
+}
+
+.submenu li a {
+    color: #286d89;
+    text-decoration: none;
+}
+
+.submenu li a:hover {
+    background-color: #f0f0f0;
+}
+
+
+.burger-menu {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #286d89;
+}
+
+@media (max-width: 768px) {
+    .burger-menu {
+        display: block;
+    }
+
+    .main-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        right: 10px;
+        top: 50px;
+        background-color: #fff;
+        border: 1px solid #286d89;
+        width: 200px;
+        padding: 10px;
+    }
+
+    .main-menu.open {
+        display: flex;
+    }
+
+    .main-menu > li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+

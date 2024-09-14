@@ -2,16 +2,28 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/components/menu.css';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
+
 const Menu = () => {
-    const [showList, setShowList] = useState(false); // État pour gérer la visibilité du sous-menu
+    const [showList, setShowList] = useState(false);
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const toggleList = () => {
-        setShowList(!showList); // Inverse l'état pour afficher ou masquer le sous-menu
+        setShowList(!showList);
+    };
+
+    const toggleBurger = () => {
+        setIsMenuOpen(!isMenuOpen);
     };
 
     return (
         <div className="nav">
-            <ul className="main-menu">
+            <button className="burger-menu" onClick={toggleBurger}>
+                <FontAwesomeIcon icon={faBars} />
+            </button>
+            {/* Utilisation d'une classe conditionnelle pour le menu principal */}
+            <ul className={`main-menu ${isMenuOpen ? 'open' : ''}`}>
                 <li><Link to="/">HomePage</Link></li>
                 <li onClick={toggleList}>
                     <Link to="/massages">Massages</Link>
@@ -37,5 +49,6 @@ const Menu = () => {
 };
 
 export default Menu;
+
 
 
