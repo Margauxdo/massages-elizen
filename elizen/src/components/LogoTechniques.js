@@ -12,6 +12,7 @@ const LogoTechniques = () => {
                 <li className="logo-6"><img className="shiatsu" src="../asset/illustration/shiatsu.png" alt="logo massage shiatsu"/></li>
                 <li className="logo-7"><img className="thai" src="../asset/illustration/thai.png" alt="logo massage thai"/></li>
             </ul>
+
         </div>
     );
 };
