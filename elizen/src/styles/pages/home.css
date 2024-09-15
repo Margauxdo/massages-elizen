@@ -33,6 +33,51 @@
     width: 80%;
     margin-left: 50px;
 }
+.privateOrProfessionnal{
+    background-color: #edbbb4;
+}
+.privateOrProfessionnal h2{
+    margin-left: 100px;
+    padding-top: 100px;
+    color:#286d89;
+
+}
+.privateOrProfessionnal p{
+    color:#f3e9e7;
+}
+.particulier, .pro{
+    width: 80%;
+    margin: auto;
+}
+.particulier button, .pro button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 200px;
+        height: 40px;
+        text-align: center;
+        color: white;
+        border-radius: 5px;
+        background: #286d89;
+        border: none;
+        margin: 30px auto;
+        padding: 5px;
+        font-size: 14px;
+        cursor: pointer;
+        box-shadow: 0 5px 0 #286d89;
+        transition: all 0.2s ease;
+    }
+
+.particulier button:active, .pro button:active{
+        transform: translateY(5px);
+        box-shadow: 0 2px 0 #8B4513;
+    }
+.pro{
+    padding-bottom: 50px;
+}
+
+
 
 
 /* Style pour tablettes */
@@ -41,9 +86,21 @@
     .headband_text {
         font-size: 25px;
     }
-    .textAbout{
-        width:95%;
+
+    .textAbout {
+        width: 95%;
         margin-left: 10px;
+    }
+
+    .privateOrProfessionnal h2 {
+        margin: 0;
+        width: 100%;
+        text-align: center;
+        padding-top: 50px;
+    }
+
+    .particulier, .pro {
+        width: 100%;
     }
 }
 
@@ -53,6 +110,16 @@
 
 
         height: 200px;
+    }
+    .privateOrProfessionnal h2 {
+        margin: 0;
+        width: 100%;
+        text-align: center;
+        padding-top: 30px;
+    }
+
+    .particulier, .pro {
+        width: 100%;
     }
     .textAbout{
         width:100%;

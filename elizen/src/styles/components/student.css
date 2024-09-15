@@ -1,7 +1,7 @@
 .timeline {
     display: flex;
     justify-content: space-around;
-    margin: 50px;
+    margin: 100px 50px 50px 50px;
     padding: 10px 0;
     border-top: 1px solid #286d89;
     position: relative;

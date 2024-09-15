@@ -1,0 +1,38 @@
+.price-container {
+    background: url("../assets/flowersBG.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 20px;
+    flex-wrap: wrap;
+    width:100%;
+    margin: auto;
+}
+
+.part, .pro {
+    flex: 1 1 25%;
+    padding: 40px;
+    margin: 200px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+    background: #f3e9e7;
+
+}
+
+@media (max-width: 768px) {
+    .price-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .part, .pro {
+        flex: 1 1 100%;
+        max-width: 90%;
+        padding: 10px;
+        margin: 0px;
+    }
+}

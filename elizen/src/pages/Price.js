@@ -3,27 +3,23 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import PricePart from "../components/PricePart";
 import PricePro from "../components/PricePro";
+import '../styles/pages/price.css';
 
 const Price = () => {
     return (
         <div className="price">
             <div className="header_bar">
-                <Header/>
-
+                <Header />
             </div>
             <div className="title">
-                <h2>Tarifs</h2>
+                <h2>Mes formules</h2>
             </div>
-            <div className="part">
-                <PricePart/>
+            <div className="price-container">
+                <PricePart />
+                <PricePro />
             </div>
-            <div className="pro">
-                <PricePro/>
-            </div>
-
-
             <div className="footer-container">
-                <Footer/>
+                <Footer />
             </div>
         </div>
     );
