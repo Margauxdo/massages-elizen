@@ -6,6 +6,7 @@ import Header from "../components/Header";
 import About from "../components/About";
 import LogoTechniques from "../components/LogoTechniques";
 import '../styles/pages/home.css';
+import Elise from "../components/Elise";
 
 const Home = () => {
     return (
@@ -32,7 +33,13 @@ const Home = () => {
             </div>
 
             <div className="about">
-                <About/>
+                <div className="imgAbout">
+                    <Elise/>
+                </div>
+                <div className="textAbout">
+                    <About/>
+                </div>
+
             </div>
             <div className="privateOrProfessionnal">
             <h2>Massages à Domicile et en Entreprise : Bien-être à portée de main, où que vous soyez</h2>

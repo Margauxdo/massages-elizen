@@ -26,10 +26,13 @@
     color: #286d89;
     text-decoration: none;
     padding: 10px;
+    font-family: 'Dancing Script';
+    font-size: 40px;
 }
 
 .main-menu > li:hover > a {
-    border-top: #286d89 1px solid;
+    border-top: #ad6b02 1px solid;
+    color:#ad6b02;
 }
 
 /* Styles pour le sous-menu */
@@ -99,6 +102,10 @@
     .main-menu > li {
         margin-right: 0;
         margin-bottom: 10px;
+    }
+
+    .nav{
+        padding: 0px;
     }
 }
 

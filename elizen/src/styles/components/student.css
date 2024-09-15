@@ -1,0 +1,36 @@
+.timeline {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px;
+    padding: 10px 0;
+    border-top: 1px solid #286d89;
+    position: relative;
+    width: 80%;
+}
+
+.timeline-item {
+    position: relative;
+    cursor: pointer;
+    bottom:50px;
+
+}
+
+.date {
+    color: #286d89;
+    padding: 5px 10px;
+    border-radius: 5%;
+    border: 1px solid #286d89;
+
+}
+
+
+.details {
+   text-align: center;
+    border:1px solid #efd396;
+    width:50%;
+    margin-left: 50px;
+
+}
+.details h4, .details p{
+    color:#286d89;
+}

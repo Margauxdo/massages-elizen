@@ -1,4 +1,6 @@
 import React from 'react';
+import Student from "./Student";
+import '../styles/components/about.css';
 
 const About = () => {
     return (
@@ -14,22 +16,9 @@ const About = () => {
                 <p>Suite à l'obtention de mon diplôme, j'ai rejoint la société JOAM et, depuis 2018, j'ai eu la chance d'intervenir chaque semaine auprès de grandes entreprises telles que Christian Dior, Balmain Paris, Total Énergie, Universal, Pernod Ricard, et bien d'autres sur les secteurs de Lille et Paris. Aujourd'hui indépendante, je possède mon propre numéro de Siret, et je suis fière de développer ma clientèle et de promouvoir le bien-être en entreprise et auprès des particuliers sur Lille et ses alentours.</p>
             </div>
             </div>
-            <div>
+            <div className="student">
                 <h3>Mes formations</h3>
-                <div>
-                    <h4>Diplôme de Masseuse Bien-être -</h4>
-                    <p> Obtenu en juillet 2018 à l'AVH, Paris, diplôme d'État reconnu par la RNCP, le ministère du travail et l'éducation nationale.</p>
-                    <ul>
-                        <li>Massage Californien</li>
-                        <li>Massage Ayurvédique</li>
-                        <li>Massage aux Pierres Chaudes</li>
-                        <li>Shiatsu</li>
-                        <li>Massage Thaïlandais</li>
-                        <li>Amma Assis</li>
-                        <li>Réflexologie Plantaire</li>
-                        <li>Massage Shiatsu femme enceinte - 2024</li>
-                    </ul>
-                </div>
+                    <Student/>
             </div>
             <div className="massage">
                 <h3>Mon approche du massage</h3>
