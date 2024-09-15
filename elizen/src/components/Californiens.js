@@ -1,9 +1,12 @@
 import React from 'react';
+import '../styles/pages/massages.css';
+
 
 const Californiens = () => {
     return (
         <div className="Californiens">
             <h3>Qu'est-ce que le Massage Californien ?</h3>
+            <div className="contain">
             <img className="img_californien" src="../asset/img/californien.png" alt="img_californien"/>
             <p>
                 Le massage californien, également connu sous le nom de "toucher du cœur", est une pratique psychocorporelle apparue dans les années 1970. Ce massage offre une approche globale qui vise à la fois la détente profonde et l’éveil de la conscience corporelle.
@@ -17,6 +20,7 @@ const Californiens = () => {
                 Le massage californien est également recommandé pour les personnes ayant subi des changements corporels. Pour organiser une séance, il est essentiel de disposer d'une pièce suffisamment grande pour accueillir une table de massage, permettant au praticien de circuler aisément autour de celle-ci.
             </p>
 
+        </div>
         </div>
     );
 };

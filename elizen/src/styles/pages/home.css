@@ -33,61 +33,59 @@
     width: 80%;
     margin-left: 50px;
 }
-.privateOrProfessionnal {
-    display: flex; /* Utilise Flexbox pour aligner les divs particulier et pro côte à côte */
-    gap: 20px; /* Espace entre les deux divs */
-    justify-content: center; /* Centre les divs horizontalement */
-    padding: 20px;
-    align-items: center; /* Centre verticalement les éléments */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center;
+    align-items: start;
 }
 
-.particulier {
-    flex: 1 1 45%; /* Prend environ 45% de la largeur disponible */
+/* Styles des cartes */
+.part, .pro {
     background-color: #f3e9e7;
-    border-radius: 0 50% 50% 0; /* Bordure arrondie à droite */
+    border-radius: 10px;
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ajoute une ombre pour un effet 3D */
-    margin-bottom: 20px;
+    width: 100%;
+    min-height: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+.privateOrProfessionnal h2{
+    padding-left: 100px;
+    background: #edbbb4;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 50px;
+    color:#f3e9e7;
 }
 
-.pro {
-    flex: 1 1 45%; /* Prend environ 45% de la largeur disponible */
-    background-color: #e7f3ea;
-    border-radius: 50% 0 0 50%; /* Bordure arrondie à gauche */
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ajoute une ombre pour un effet 3D */
-    margin-bottom: 20px;
+
+.part button, .pro button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 40px;
+    color: white;
+    border-radius: 5px;
+    background: #286d89;
+    border: none;
+    margin: 0 auto;
+    padding: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    box-shadow: 0 5px 0 #286d89;
+    transition: all 0.2s ease;
 }
 
-
-
-.particulier button, .pro button{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        width: 200px;
-        height: 40px;
-        text-align: center;
-        color: white;
-        border-radius: 5px;
-        background: #286d89;
-        border: none;
-        margin: 30px auto;
-        padding: 5px;
-        font-size: 14px;
-        cursor: pointer;
-        box-shadow: 0 5px 0 #286d89;
-        transition: all 0.2s ease;
-    }
-
-.particulier button:active, .pro button:active{
-        transform: translateY(5px);
-        box-shadow: 0 2px 0 #8B4513;
-    }
-
-
-
+.part button:active, .pro button:active {
+    transform: translateY(5px);
+    box-shadow: 0 2px 0 #8B4513;}
 
 
 /* Style pour tablettes */
@@ -96,14 +94,12 @@
     .headband_text {
         font-size: 25px;
     }
-
-    .textAbout {
-        width: 95%;
+    .textAbout{
+        width:95%;
         margin-left: 10px;
     }
-
-
 }
+
 
 
 @media (max-width: 768px) {
@@ -111,15 +107,6 @@
 
 
         height: 200px;
-    }
-    .privateOrProfessionnal {
-        flex-direction: column; /* Empile les divs verticalement */
-        align-items: center; /* Centre les divs */
-    }
-
-    .particulier, .pro {
-        flex: 1 1 100%; /* Prend toute la largeur sur les petits écrans */
-        max-width: 90%; /* Limite la largeur maximale pour éviter de toucher les bords */
     }
     .textAbout{
         width:100%;

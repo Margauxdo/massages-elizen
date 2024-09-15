@@ -44,7 +44,7 @@ const Home = () => {
             <div className="privateOrProfessionnal">
             <h2>Massages à Domicile et en Entreprise : Bien-être à portée de main, où que vous soyez</h2>
 
-                <div className="particulier">
+                <div className="part">
                     <h3>Offrez-vous un Instant de Bien-être à Domicile</h3>
 
                     <p>Offrez-vous un moment de détente et de bien-être sans quitter le confort de votre maison. Je me déplace à votre domicile avec tout le matériel nécessaire pour vous offrir une expérience de massage personnalisée et adaptée à vos besoins. Que ce soit pour soulager les tensions, revitaliser votre corps, ou simplement profiter d'un moment de relaxation profonde, je suis à votre service pour vous offrir une pause bien-être à tout moment.</p>

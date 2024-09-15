@@ -1,6 +1,6 @@
 
 form {
-    max-width: 600px;
+    max-width: 900px;
     margin: 20px auto;
     padding: 20px;
     border: 1px solid #f3e9e7;
@@ -55,11 +55,6 @@ button:active {
     transform: translateY(3px);
     box-shadow: 0 2px 0 #f3e9e7;
     background-color: #f3e9e7;
-}
-.title{
-    background: url("../assets/flowersBG.png");
-    background-size: cover;
-    background-position: center;
 }
 
 /* Version tablette horizontale */

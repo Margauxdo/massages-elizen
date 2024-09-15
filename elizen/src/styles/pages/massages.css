@@ -1,0 +1,31 @@
+.massage_intro{
+    width: 60%;
+    text-align: center;
+    margin: auto;
+    border-radius: 15px;
+    background: #f3e9e7;
+    padding: 50px;
+    position: relative;
+    bottom: 380px;
+    box-shadow: 1px 2px 3px #f3e9e7;
+}
+.massage h3{
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    bottom: 350px;
+}
+.contain{
+    display: flex;
+    width: 60%;
+    margin: auto;
+}
+.contain img{
+    object-fit: cover;
+    height: 400px;
+    width: 900px;
+    border-radius: 50px 0px;
+}
+.contain p{
+    padding: 50px;
+}

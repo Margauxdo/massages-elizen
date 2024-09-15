@@ -1,7 +1,5 @@
 .price-container {
-    background: url("../assets/flowersBG.png");
-    background-size: cover;
-    background-position: center;
+
     display: flex;
     justify-content: space-between;
     gap: 50px;
@@ -11,7 +9,8 @@
     margin: auto;
 }
 
-.part, .pro {
+
+.particulier, .professionnel {
     flex: 1 1 25%;
     padding: 40px;
     margin: 200px;
@@ -29,7 +28,7 @@
         align-items: center;
     }
 
-    .part, .pro {
+    .particulier, .professionnel {
         flex: 1 1 100%;
         max-width: 90%;
         padding: 10px;

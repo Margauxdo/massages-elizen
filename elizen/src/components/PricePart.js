@@ -2,7 +2,7 @@ import React from 'react';
 
 const PricePart = () => {
     return (
-        <div className="part">
+        <div className="particulier">
 
             <h2>Tarifs pour les particuliers</h2>
 

@@ -2,7 +2,7 @@ import React from 'react';
 
 const PricePro = () => {
     return (
-        <div className="pro">
+        <div className="professionnel">
             <h2>Tarifs pour les entreprise</h2>
             <p>SÉANCE BIEN-ÊTRE POUR LES SALARIÉS EN ENTREPRISE</p>
 

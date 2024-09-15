@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/pages/contact.css';
 
 import Form from "../components/Form";
 import Footer from "../components/Footer";
@@ -13,6 +14,7 @@ const Contact = () => {
             </div>
             <div className="title">
                 <h2>Contact</h2>
+
                 <Form/>
             </div>
             <div className="footer-container">
