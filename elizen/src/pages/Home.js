@@ -5,6 +5,7 @@ import Header from "../components/Header";
 
 import About from "../components/About";
 import LogoTechniques from "../components/LogoTechniques";
+import '../styles/pages/home.css';
 
 const Home = () => {
     return (
@@ -14,7 +15,7 @@ const Home = () => {
 
             </div>
             <div className="headBand_presentation">
-
+                <img className="img-home" src="../asset/design-home.png" alt="femme allongé dos découvert"/>
             </div>
             <div className="massage_technique">
 

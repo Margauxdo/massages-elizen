@@ -1,0 +1,46 @@
+.headband_text{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: capitalize;
+    padding: 30px 0px;
+    color: #286d89;
+    animation: slide 5s ease;
+    display: inline-block;
+}
+@keyframes slide {
+    0%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+}
+.headBand_presentation img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+/* Style pour tablettes */
+@media (max-width: 1024px) {
+
+    .headband_text {
+        font-size: 25px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .headBand_presentation img {
+
+
+        height: 200px;
+    }
+    .headband_text {
+        font-size: 18px;
+    }
+}
