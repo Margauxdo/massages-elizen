@@ -33,22 +33,34 @@
     width: 80%;
     margin-left: 50px;
 }
-.privateOrProfessionnal{
-    background-color: #edbbb4;
+.privateOrProfessionnal {
+    display: flex; /* Utilise Flexbox pour aligner les divs particulier et pro côte à côte */
+    gap: 20px; /* Espace entre les deux divs */
+    justify-content: center; /* Centre les divs horizontalement */
+    padding: 20px;
+    align-items: center; /* Centre verticalement les éléments */
 }
-.privateOrProfessionnal h2{
-    margin-left: 100px;
-    padding-top: 100px;
-    color:#286d89;
 
+.particulier {
+    flex: 1 1 45%; /* Prend environ 45% de la largeur disponible */
+    background-color: #f3e9e7;
+    border-radius: 0 50% 50% 0; /* Bordure arrondie à droite */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ajoute une ombre pour un effet 3D */
+    margin-bottom: 20px;
 }
-.privateOrProfessionnal p{
-    color:#f3e9e7;
+
+.pro {
+    flex: 1 1 45%; /* Prend environ 45% de la largeur disponible */
+    background-color: #e7f3ea;
+    border-radius: 50% 0 0 50%; /* Bordure arrondie à gauche */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ajoute une ombre pour un effet 3D */
+    margin-bottom: 20px;
 }
-.particulier, .pro{
-    width: 80%;
-    margin: auto;
-}
+
+
+
 .particulier button, .pro button{
         display: flex;
         justify-content: center;
@@ -73,9 +85,7 @@
         transform: translateY(5px);
         box-shadow: 0 2px 0 #8B4513;
     }
-.pro{
-    padding-bottom: 50px;
-}
+
 
 
 
@@ -92,16 +102,7 @@
         margin-left: 10px;
     }
 
-    .privateOrProfessionnal h2 {
-        margin: 0;
-        width: 100%;
-        text-align: center;
-        padding-top: 50px;
-    }
 
-    .particulier, .pro {
-        width: 100%;
-    }
 }
 
 
@@ -111,15 +112,14 @@
 
         height: 200px;
     }
-    .privateOrProfessionnal h2 {
-        margin: 0;
-        width: 100%;
-        text-align: center;
-        padding-top: 30px;
+    .privateOrProfessionnal {
+        flex-direction: column; /* Empile les divs verticalement */
+        align-items: center; /* Centre les divs */
     }
 
     .particulier, .pro {
-        width: 100%;
+        flex: 1 1 100%; /* Prend toute la largeur sur les petits écrans */
+        max-width: 90%; /* Limite la largeur maximale pour éviter de toucher les bords */
     }
     .textAbout{
         width:100%;
