@@ -7,7 +7,6 @@ const PierresChaudes = () => {
         <div className="PierresChaudes">
             <h3>Le Massage aux Pierres Chaudes : Une Invitation à la Détente Profonde et à l'Équilibre Énergétique</h3>
             <div className="contain">
-            <img className="img_pierres_chaudes" src="../asset/img/pierresC.png" alt="img_pierres_chaudes"/>
             <p>
                 Le massage aux pierres chaudes est une technique millénaire inspirée de traditions amérindiennes et asiatiques, qui utilise l'énergie naturelle des pierres volcaniques pour offrir une expérience de détente profonde et de rééquilibrage énergétique. Ce massage allie la chaleur douce des pierres basaltiques, d'origine volcanique, à des manœuvres manuelles harmonieuses, pour créer une synergie unique entre chaleur et toucher thérapeutique.
 

@@ -7,7 +7,6 @@ const Californiens = () => {
         <div className="Californiens">
             <h3>Qu'est-ce que le Massage Californien ?</h3>
             <div className="contain">
-            <img className="img_californien" src="../asset/img/californien.png" alt="img_californien"/>
             <p>
                 Le massage californien, également connu sous le nom de "toucher du cœur", est une pratique psychocorporelle apparue dans les années 1970. Ce massage offre une approche globale qui vise à la fois la détente profonde et l’éveil de la conscience corporelle.
 

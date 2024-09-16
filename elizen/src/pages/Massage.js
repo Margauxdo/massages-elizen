@@ -23,7 +23,7 @@ const Massage = () => {
                 <BandeauMassage/>
             </div>
             <div className="massage_intro">
-                <h2>L'Art du Massage : Un Voyage de Bien-Être et de Sérénité</h2>
+                <h1>L'Art du Massage : Un Voyage de Bien-Être et de Sérénité</h1>
                 <p>Plongez dans l'univers apaisant du massage, une pratique ancestrale qui allie le toucher bienveillant à des techniques précises pour vous offrir un moment de détente et de soin profond. Bien plus qu'un simple moyen de relaxation, le massage est une invitation à reconnecter le corps et l'esprit, à apaiser les tensions accumulées, et à rétablir un équilibre intérieur.
 
                     Chaque massage est une expérience unique qui répond à des besoins spécifiques : qu'il s'agisse de soulager des douleurs musculaires, d'améliorer la circulation, de réduire le stress ou simplement de s'accorder un moment de répit, il existe une technique adaptée pour vous.
@@ -31,7 +31,7 @@ const Massage = () => {
                     Découvrez nos différentes techniques de massage, chacune avec ses bienfaits propres, conçues pour vous apporter bien-être et harmonie. Laissez-vous guider et choisissez celle qui correspond le mieux à vos envies et à vos besoins pour vivre un véritable moment de ressourcement.</p>
             </div>
 
-            <h3>Découvrez Nos 9 Techniques de Massage pour votre Bien-Être</h3>
+            <h2>Découvrez Nos 9 Techniques de Massage pour votre Bien-Être</h2>
             <div className="amma_assis">
                 <AmmaAssis/>
             </div>

@@ -7,7 +7,6 @@ const Ayurvedique = () => {
         <div className="ayurvedique">
             <h3>Le Massage Ayurvédique : Une Harmonie Ancestrale entre Corps et Esprit</h3>
             <div className="contain">
-            <img className="img_ayurvedique" src="../asset/img/ayur.png" alt="img_ayurvedique"/>
             <p>
                 Le massage ayurvédique, issu de l'Ayurveda, la médecine traditionnelle indienne vieille de plus de 5 000
                 ans, est une pratique holistique visant à harmoniser le corps, l'esprit et l'âme. Ce massage unique est

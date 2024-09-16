@@ -1,4 +1,4 @@
-.massage_intro{
+.massage_intro {
     width: 60%;
     text-align: center;
     margin: auto;
@@ -9,23 +9,107 @@
     bottom: 380px;
     box-shadow: 1px 2px 3px #f3e9e7;
 }
-.massage h3{
+
+.massage h2 {
+    position: relative;
+    bottom: 350px;
+    text-align: center;
+    color: #286d89;
+    font-size: 28px;
+}
+
+.massage h3 {
     font-size: 30px;
     text-align: center;
     position: relative;
     bottom: 350px;
 }
-.contain{
+
+.contain {
     display: flex;
     width: 60%;
     margin: auto;
+    position: relative;
+    bottom: 400px;
+    gap: 20px;
 }
-.contain img{
+
+.contain img {
     object-fit: cover;
     height: 400px;
     width: 900px;
     border-radius: 50px 0px;
 }
-.contain p{
+
+.contain p {
     padding: 50px;
+}
+
+/* Adaptation pour Tablettes */
+@media (max-width: 1024px) {
+    .massage_intro {
+        width: 80%;
+        padding: 30px;
+        bottom: 200px;
+    }
+
+    h2 {
+        font-size: 24px;
+        bottom: 150px;
+    }
+
+    .massage h3 {
+        font-size: 26px;
+        bottom: 150px;
+    }
+
+    .contain {
+        flex-direction: column;
+        width: 90%;
+        bottom: 200px;
+    }
+
+    .contain img {
+        height: 300px;
+        width: 100%;
+    }
+
+    .contain p {
+        padding: 20px;
+    }
+}
+
+/* Adaptation pour Téléphones */
+@media (max-width: 768px) {
+    .massage_intro {
+        width: 95%;
+        padding: 20px;
+        bottom: 100px;
+    }
+
+    h2 {
+        font-size: 20px;
+        bottom: 100px;
+    }
+
+    .massage h3 {
+        font-size: 22px;
+        bottom: 100px;
+    }
+
+    .contain {
+        width: 100%;
+        flex-direction: column;
+        bottom: 100px;
+    }
+
+    .contain img {
+        height: 200px;
+        width: 100%;
+        border-radius: 20px;
+    }
+
+    .contain p {
+        padding: 10px;
+    }
 }

@@ -7,7 +7,6 @@ const Thailandais = () => {
         <div className="thailandais">
             <h3>Qu'est-ce que le Massage Thaïlandais ?</h3>
             <div className="contain">
-            <img className="img_thailandais" src="../asset/img/thailandais.png" alt="img_thailandais"/>
             <p>
                 Le massage thaïlandais, bien qu'origine de l'Inde, est fortement influencé par le bouddhisme et la médecine traditionnelle chinoise, et repose sur une approche énergétique de la santé. Il s'inspire de techniques issues du shiatsu, du yoga et de la méditation.
 

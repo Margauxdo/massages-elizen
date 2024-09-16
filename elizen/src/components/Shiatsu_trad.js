@@ -5,9 +5,8 @@ import '../styles/pages/massages.css';
 const ShiatsuTrad = () => {
     return (
         <div className="ShiatsuTrad">
-            <h4>Le Shiatsu : Une Pratique Japonaise pour Équilibrer Corps et Esprit</h4>
+            <h3>Le Shiatsu : Une Pratique Japonaise pour Équilibrer Corps et Esprit</h3>
             <div className="contain">
-            <img className="img_shiatsu_trad" src="../asset/img/shiatsutrad.png" alt="img_shiatsu_trad"/>
             <p>
                 Le shiatsu, qui signifie littéralement "pression des doigts", est une technique japonaise qui utilise des pressions, des étirements et des mobilisations pour améliorer la proprioception et stimuler la circulation de l'énergie vitale. Également connu sous le nom d'acupression, le shiatsu partage certaines bases avec l'acupuncture et le massage Amma, et s'inspire de la médecine traditionnelle chinoise, notamment de la notion de méridiens.
 
