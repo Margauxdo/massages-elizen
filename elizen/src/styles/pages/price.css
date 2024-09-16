@@ -13,14 +13,28 @@
 .particulier, .professionnel {
     flex: 1 1 25%;
     padding: 40px;
-    margin: 200px;
-    border: 1px solid #ddd;
+    margin: 50px;
+    border: 1px solid #ad6b0226;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 50px;
-    background: #f3e9e7;
+    background: #ad6b0240;
+    text-align: center;
 
 }
+.particulier li, .professionnel li{
+    list-style: none;
+    color: rgb(40, 109, 137);
+    font-size: 15px;
+    text-transform: capitalize;
+    font-style: initial;
+}
+.imgtarifs img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
 
 @media (max-width: 768px) {
     .price-container {

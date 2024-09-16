@@ -6,6 +6,7 @@ const Form = () => {
     const [formData, setFormData] = useState({
         name: '',
         firstname: '',
+        statut:'',
         phone: '',
         mail: '',
         message: ''
@@ -46,7 +47,13 @@ const Form = () => {
                 />
             </div>
             <div>
-                <label htmlFor="phone">Téléphone</label>
+                <select htmlFor="statut">
+                    <option>Entreprise</option>
+                    <option>Particulier</option>
+                </select>
+            </div>
+            <div>
+            <label htmlFor="phone">Téléphone</label>
                 <input
                     type="text"
                     id="phone"

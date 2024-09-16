@@ -14,6 +14,9 @@ const Price = () => {
             <div className="title">
                 <h2>Mes formules</h2>
             </div>
+            <div className="imgtarifs">
+                <img src="../asset/img/fondtarifs.png" alt="table de massages fond couleur marron"/>
+            </div>
             <div className="price-container">
                 <PricePart />
                 <PricePro />

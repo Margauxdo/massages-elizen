@@ -14,8 +14,13 @@ const Contact = () => {
             </div>
             <div className="title">
                 <h2>Contact</h2>
+                <div className="containContact">
 
-                <Form/>
+                    <div className="leftContact">
+                        <Form/>
+                    </div>
+                </div>
+
             </div>
             <div className="footer-container">
                 <Footer/>
