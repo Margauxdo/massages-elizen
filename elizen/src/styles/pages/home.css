@@ -6,7 +6,7 @@
     padding: 30px 0px;
     color: #286d89;
     animation: slide 5s ease;
-    display: inline-block;
+    //display: inline-block;
 }
 
 @keyframes slide {
@@ -23,7 +23,7 @@
 
 .headBand_presentation img {
     width: 100%;
-    height: 500px;
+    height: 550px;
     object-fit: cover;
 }
 
@@ -136,6 +136,7 @@
 
     .headband_text {
         font-size: 18px;
+        padding: 10px 0;
     }
 
     .part,

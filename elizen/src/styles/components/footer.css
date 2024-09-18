@@ -2,104 +2,64 @@
     background-color: #286d89;
     padding: 20px;
     color: #efd396;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
     align-items: center;
     text-align: center;
 }
 
-.logoFooter img {
-    width: 60px;
-    margin-bottom: 10px;
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-.footer p {
-    margin: 10px 0;
+.footer-column.logo img {
+    width: 60px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    padding: 10px 0;
+    color: #efd396;
     font-size: 14px;
 }
 
-.footer ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    gap: 15px;
+/* Adaptation pour Tablettes */
+@media (max-width: 1024px) {
+    .footer {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .footer-column {
+        margin-bottom: 20px;
+    }
 }
 
-.footer ul li {
-    width: 25px;
-    height: 25px;
-    background-color: #efd396;
-    border-radius: 50%;
-}
-
+/* Adaptation pour Téléphones */
 @media (max-width: 768px) {
     .footer {
-        flex-direction: column;
+        grid-template-columns: 1fr;
+        text-align: center;
     }
 
-    .logoFooter img {
+    .footer-column {
+        margin-bottom: 15px;
+    }
+
+    .footer-column.logo img {
         width: 50px;
     }
 
-    .footer p {
-        font-size: 13px;
-    }
-}
-
-@media (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
-    .footer {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        text-align: left;
-    }
-
-    .logoFooter img {
-        width: 60px;
-    }
-
-    .footer ul {
-        margin-top: 0;
-    }
-}
-
-@media (max-width: 480px) {
-    .footer {
-        flex-direction: column;
-        padding: 15px;
-    }
-
-    .logoFooter img {
-        width: 40px;
-    }
-
-    .footer p {
+    .footer-column ul li {
         font-size: 12px;
     }
-
-    .footer ul {
-        flex-direction: row;
-        justify-content: center;
-        margin-top: 10px;
-    }
-
-    .footer ul li {
-        width: 20px;
-        height: 20px;
-    }
 }
 
-@media (max-width: 480px) and (orientation: landscape) {
-    .footer {
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 10px;
-    }
 
-    .logoFooter img {
-        width: 50px;
-    }
-
-    .footer ul {
-        margin-top: 0;
-    }
-}}

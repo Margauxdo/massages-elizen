@@ -16,7 +16,7 @@ const Home = () => {
 
             </div>
             <div className="headBand_presentation">
-                <img className="img-home" src="../asset/bgHome.png" alt="femme allongé dos découvert et mains qui la masse"/>
+                <img className="img-home" src="../asset/bg-home.png" alt="femme allongé dos découvert et mains qui la masse"/>
             </div>
             <div className="massage_technique">
 

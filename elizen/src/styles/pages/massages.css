@@ -11,8 +11,7 @@
 }
 
 .massage h2 {
-    position: relative;
-    bottom: 350px;
+    padding-bottom: 20px;
     text-align: center;
     color: #286d89;
     font-size: 28px;
@@ -23,50 +22,75 @@
     text-align: center;
     position: relative;
     bottom: 350px;
+    margin-bottom: 30px;
 }
 
 .contain {
     display: flex;
-    width: 60%;
+    width: 100%;
     margin: auto;
     position: relative;
     bottom: 400px;
-    gap: 20px;
+    gap: 0;
 }
 
 .contain img {
     object-fit: cover;
     height: 400px;
     width: 900px;
-    border-radius: 50px 0px;
+    border-radius: 50px 0;
 }
 
 .contain p {
-    padding: 50px;
+
+    padding-left: 100px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 20px;
+width: 100%;
+    margin: auto;
+}
+
+.grid-container .image img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    position: relative;
+    bottom: 400px;
+}
+
+.grid-container.reverse {
+    grid-template-columns: 1fr 1fr;
 }
 
 /* Adaptation pour Tablettes */
 @media (max-width: 1024px) {
     .massage_intro {
-        width: 80%;
+        width: 100%;
         padding: 30px;
         bottom: 200px;
     }
 
+    .text-massage {
+        width: 100%;
+    }
+
     h2 {
         font-size: 24px;
-        bottom: 150px;
     }
 
     .massage h3 {
         font-size: 26px;
-        bottom: 150px;
     }
 
     .contain {
         flex-direction: column;
-        width: 90%;
-        bottom: 200px;
+        width: 100%;
     }
 
     .contain img {
@@ -77,30 +101,46 @@
     .contain p {
         padding: 20px;
     }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .grid-container.reverse {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-container + .grid-container {
+        margin-top: 0;
+    }
 }
 
 /* Adaptation pour Téléphones */
 @media (max-width: 768px) {
     .massage_intro {
-        width: 95%;
-        padding: 20px;
-        bottom: 100px;
+        width: 100%;
+        padding: 20px 10px;
+        margin-bottom: 50px;
     }
 
     h2 {
         font-size: 20px;
-        bottom: 100px;
+        margin-bottom: 50px;
     }
 
     .massage h3 {
         font-size: 22px;
-        bottom: 100px;
+        margin-bottom: 50px;
     }
 
     .contain {
         width: 100%;
         flex-direction: column;
-        bottom: 100px;
+        margin-bottom: 50px;
     }
 
     .contain img {
@@ -111,5 +151,25 @@
 
     .contain p {
         padding: 10px;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .grid-container .image {
+        order: -1;
+    }
+
+    .grid-container.reverse {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-container + .grid-container {
+        margin-top: 0;
     }
 }

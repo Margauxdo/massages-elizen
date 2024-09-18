@@ -21,7 +21,7 @@ const About = () => {
                     <Student/>
             </div>
             <div className="massage">
-                <h3>Mon approche du massage</h3>
+
                 <div className="text-massage">
                     <p>Le massage est pour moi plus qu'une technique : c'est un art de vivre et une passion depuis mon plus jeune âge. Mon approche repose sur une écoute attentive, une compréhension sans parole, et une capacité à ressentir ce qui se passe sous mes mains.</p>
                     <p>Chaque massage que je donne est une invitation à déposer ses craintes et ses tensions dans un espace de non-jugement. Il ne s'agit pas seulement de suivre un protocole, mais aussi de savoir quand s'en écarter pour apporter un soulagement maximal, en ciblant les tensions et les blocages énergétiques.</p>
