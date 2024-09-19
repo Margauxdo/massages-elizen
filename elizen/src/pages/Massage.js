@@ -40,28 +40,28 @@ const Massage = () => {
             </div>
 
 
-            <div className="amma_assis">
+            <div className="amma_assis" id="ammaassis">
             <AmmaAssis/>
             </div>
-            <div className="shiatsu_trad">
+            <div className="shiatsu_trad" id="shiatsu">
                 <Shiatsu_trad/>
 
             </div>
 
-            <div className="thailandais">
+            <div className="thailandais" id="thailandais">
                 <Thailandais/>
 
             </div>
-            <div className="reflexologie">
+            <div className="reflexologie" id="reflexologie">
                 <Reflexologie/>
             </div>
-            <div className="californien">
+            <div className="californien" id="californien">
                 <Californiens/>
             </div>
-            <div className="pierres_chaudes">
+            <div className="pierres_chaudes" id="pierreschaudes">
                 <Pierres_chaudes/>
             </div>
-            <div className="ayurvédique">
+            <div className="ayurvédique" id="ayurvedique">
                 <Ayurvedique/>
             </div>
 

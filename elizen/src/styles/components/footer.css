@@ -9,57 +9,112 @@
     text-align: center;
 }
 
-.footer-column {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
+.footer .logoFooter img {
+    width: 150px;
+    margin-bottom: 15px;
 }
 
-.footer-column.logo img {
-    width: 60px;
+.footer p {
+    font-size: 16px;
+    margin: 0;
+    color: #edbbb4;
+}
+.footer p a:hover{
+    color: #f3e9e7;
 }
 
-.footer-column ul {
-    list-style: none;
+.footer .reseaux,
+.footer .label {
+    list-style-type: none;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
 }
 
-.footer-column ul li {
-    padding: 10px 0;
-    color: #efd396;
+.footer .reseaux li img {
+    width: 40px;
+    height: auto;
+}
+
+.footer .label li a {
+    text-decoration: none;
+    color: #333;
     font-size: 14px;
+    transition: color 0.3s ease;
 }
 
-/* Adaptation pour Tablettes */
-@media (max-width: 1024px) {
-    .footer {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-
-    .footer-column {
-        margin-bottom: 20px;
-    }
+.footer .label li a:hover {
+    color: #555;
 }
 
-/* Adaptation pour Téléphones */
-@media (max-width: 768px) {
+/* Responsivité : Mobile */
+@media (max-width: 576px) {
     .footer {
-        grid-template-columns: 1fr;
-        text-align: center;
+        padding: 15px;
     }
 
-    .footer-column {
-        margin-bottom: 15px;
+    .footer .logoFooter img {
+        width: 120px;
     }
 
-    .footer-column.logo img {
-        width: 50px;
+    .footer p {
+        font-size: 14px;
     }
 
-    .footer-column ul li {
+    .footer .reseaux li img {
+        width: 25px;
+    }
+
+    .footer .label li a {
         font-size: 12px;
     }
 }
 
+/* Responsivité : Tablette */
+@media (min-width: 577px) and (max-width: 992px) {
+    .footer {
+        padding: 20px;
+    }
 
+    .footer .logoFooter img {
+        width: 130px;
+    }
+
+    .footer p {
+        font-size: 15px;
+    }
+
+    .footer .reseaux li img {
+        width: 28px;
+    }
+
+    .footer .label li a {
+        font-size: 13px;
+    }
+}
+
+/* Responsivité : Desktop */
+@media (min-width: 993px) {
+    .footer {
+        padding: 30px;
+    }
+
+    .footer .logoFooter img {
+        width: 160px;
+    }
+
+    .footer p {
+        font-size: 18px;
+    }
+
+    .footer .reseaux li img {
+        width: 35px;
+    }
+
+    .footer .label li a {
+        font-size: 15px;
+    }
+}

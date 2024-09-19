@@ -29,15 +29,13 @@ const Menu = () => {
                     <Link to="/massages">Massages</Link>
                     {showList && (
                         <ul className="submenu">
-                            <li><Link to="/massages/amma-assis">Amma assis</Link></li>
-                            <li><Link to="/massages/shiatsu-traditionnelle">Shiatsu traditionnelle</Link></li>
-                            <li><Link to="/massages/shiatsu-decouverte">Shiatsu découverte</Link></li>
-                            <li><Link to="/massages/shiatsu-femme-enceinte">Shiatsu femme enceinte</Link></li>
-                            <li><Link to="/massages/thailandais">Thaïlandais</Link></li>
-                            <li><Link to="/massages/reflexologie">Réflexologie plantaire ou palmaire</Link></li>
-                            <li><Link to="/massages/californien">Californien</Link></li>
-                            <li><Link to="/massages/pierres-chaudes">Pierres chaudes</Link></li>
-                            <li><Link to="/massages/ayurvedique">Ayurvédique</Link></li>
+                            <li><Link to="/massages#ammaassis">Amma assis</Link></li>
+                            <li><Link to="/massages#shiatsu">Shiatsu traditionnelle</Link></li>
+                            <li><Link to="/massages#thailandais">Thaïlandais</Link></li>
+                            <li><Link to="/massages#reflexologie">Réflexologie plantaire ou palmaire</Link></li>
+                            <li><Link to="/massages#californien">Californien</Link></li>
+                            <li><Link to="/massages#pierreschaudes">Pierres chaudes</Link></li>
+                            <li><Link to="/massages#ayurvedique">Ayurvédique</Link></li>
                         </ul>
                     )}
                 </li>

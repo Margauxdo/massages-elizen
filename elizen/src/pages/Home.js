@@ -7,6 +7,7 @@ import About from "../components/About";
 import LogoTechniques from "../components/LogoTechniques";
 import '../styles/pages/home.css';
 import Elise from "../components/Elise";
+import {Link} from "react-router-dom";
 
 const Home = () => {
     return (
@@ -63,7 +64,7 @@ const Home = () => {
                                 à
                                 votre service pour vous offrir une pause bien-être à tout moment.</p>
 
-                            <button>Tarifs</button>
+                            <button><Link to="/price#particulier">Tarifs</Link></button>
 
                         </div>
                         <div className="pro">
@@ -79,7 +80,7 @@ const Home = () => {
                                 qui
                                 booste la motivation et la productivité. Un investissement dans le bien-être de vos
                                 collaborateurs, pour une entreprise plus saine et plus dynamique.</p>
-                            <button>Tarifs</button>
+                            <button><Link to="/price#professionnel">Tarifs</Link></button>
 
                         </div>
                     </div>

@@ -9,17 +9,19 @@ const Footer = () => {
             </div>
             <div>
                 <p>Elizen massages | Elise Debels</p>
+
+                    <p><a href="#">Mentions légales</a></p>
+                    <p><a href="../asset/cv.pdf" download="CV_Elise_Debels.pdf">Télécharger mon CV</a></p>
+
+
+
             </div>
-            <ul>
-                <li>malt</li>
-                <li>linkedin</li>
-                <li>facebook</li>
-            </ul>
-            <ul>
-                <li>mentions legales</li>
-                <li>CGV</li>
+            <ul className="reseaux">
+                <li><a><img src="../asset/reseaux/malt.png" alt="logo malt"/></a></li>
+                <li><a href="https://www.linkedin.com/in/elise-debels-a7103b188"><img src="../asset/reseaux/linkdIn.png" alt="logo linkedin"/></a></li>
 
             </ul>
+
         </div>
     );
 };
