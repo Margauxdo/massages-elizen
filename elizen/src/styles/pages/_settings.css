@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+//font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color:#f3e9e7;
+//color: #333;
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+//color: inherit;
+}
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.dancing-script-unique {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+
+}
+
+.montserrat {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+h1,h2,h3,h4{
+    font-family: "Dancing Script", cursive;
+    color: #ad6b02;
+}
+h1{
+    font-size: 35px;
+}
+h2{
+    font-size: 32px;
+}
+h3{
+    font-size: 30px;
+}
+h4{
+    font-size: 27px;
+}
+p, a{
+    font-family: "Montserrat", sans-serif;
+
+}
+p{
+    font-size: 14px;
+    color: #286d89;
+}
+a{
+    font-size: 15px;
+    color: #edbbb4;
+}

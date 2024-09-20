@@ -3,10 +3,10 @@
     font-size: 30px;
     font-weight: 600;
     text-transform: capitalize;
-    padding: 30px 0px;
+    padding: 30px 0;
     color: #286d89;
     animation: slide 5s ease;
-    //display: inline-block;
+    display: inline-block;
 }
 
 @keyframes slide {
@@ -120,10 +120,10 @@
 
     .part,
     .pro {
-        width: 80%; /* Ajuster la largeur pour les tablettes */
-        margin: 20px auto; /* Centre les éléments horizontalement */
-        padding: 15px; /* Réduire le padding pour les tablettes */
-        position: relative; /* Annule les positions spécifiques */
+        width: 80%;
+        margin: 20px auto;
+        padding: 15px;
+        position: relative;
     }
 }
 
@@ -148,9 +148,9 @@
 
     .part,
     .pro {
-        width: 100%; /* Utiliser toute la largeur disponible pour les téléphones */
-        margin: 10px 0; /* Ajouter de l'espace entre les éléments */
-        padding: 10px; /* Réduire le padding pour les petits écrans */
-        position: relative; /* Annule les positions spécifiques */
+        width: 100%;
+        margin: 10px 0;
+        padding: 10px;
+        position: relative;
     }
 }

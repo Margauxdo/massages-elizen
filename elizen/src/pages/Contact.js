@@ -14,11 +14,17 @@ const Contact = () => {
             </div>
             <div className="title">
                 <h2>Contact</h2>
+                <div className="containContactProfil">
+                    <p>massages.elizen@gmail.com</p>
+                    <p>06 . 56 . 75 . 08 . 52</p>
+                </div>
+                <h2>Contactez-moi</h2>
                 <div className="containContact">
 
                     <div className="leftContact">
                         <Form/>
                     </div>
+
                 </div>
 
             </div>

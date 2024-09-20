@@ -21,6 +21,14 @@ const PricePro = () => {
                 <li>Massage californien</li>
 
             </ul>
+
+            <br/>
+            <br/>
+            <br/>
+
+            <p><em>*** Les prix incluent les frais de déplacement sur Lille et ses alentours ***</em></p>
+            <p><em>*** Déduction des charges AGEFIPH </em></p>
+
         </div>
     );
 };
