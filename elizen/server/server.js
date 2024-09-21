@@ -1,9 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
-const fs = require('fs');
-const path = require('path');
-const sendEmail = require('../server/service/mailer');
+const sendEmail = require('./mailer'); // Assure-toi que le chemin est correct
 
 const app = express();
 const port = 5000;
@@ -16,34 +14,18 @@ app.use(bodyParser.json());
 app.post('/api/submit', async (req, res) => {
     const data = req.body;
 
-    // Sauvegarder les données dans un fichier (si nécessaire)
-    const filePath = path.join(__dirname, 'data.txt');
-    const formattedData = `
-        name: ${data.name}
-        firstname: ${data.firstname}
-        phone: ${data.phone}
-        mail: ${data.mail}
-        message: ${data.message}
-    `;
-
-    fs.writeFile(filePath, formattedData, async (err) => {
-        if (err) {
-            console.error('Error writing to file', err);
-            res.status(500).send('Error writing to file');
-        } else {
-            try {
-                await sendEmail(data);
-                res.send('Form data received, file created, and email sent');
-            } catch (error) {
-                console.error('Error sending email', error);
-                res.status(500).send('Error sending email');
-            }
-        }
-    });
+    try {
+        await sendEmail(data); // Envoi des données à la fonction sendEmail
+        res.status(200).send('Formulaire soumis et e-mail envoyé');
+    } catch (error) {
+        console.error('Erreur lors de l\'envoi de l\'e-mail', error);
+        res.status(500).send('Erreur lors de l\'envoi de l\'e-mail');
+    }
 });
 
 // Démarrer le serveur
 app.listen(port, () => {
-    console.log(`Server running at http://localhost:${port}`);
+    console.log(`Serveur en cours d'exécution sur http://localhost:${port}`);
 });
+
 
