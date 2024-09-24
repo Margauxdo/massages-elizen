@@ -10,7 +10,8 @@ const Footer = () => {
             <div>
                 <p>Elizen massages | Elise Debels</p>
 
-                <p><a href="../asset/mentions_légales.pdf" download="CGV">Mentions légales</a></p>
+                <p><a href="../asset/mentions_légales.pdf" download="CGV">CGV</a></p>
+                <p><a href="#" download="#">Mentions légales</a></p>
                 <p><a href="../asset/cv.pdf" download="CV_Elise_Debels.pdf">Télécharger mon CV</a></p>
                 <p>massages.elizen@gmail.com</p>
                 <p>06 . 56 . 75 . 08 . 52</p>
