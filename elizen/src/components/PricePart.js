@@ -18,7 +18,7 @@ const PricePart = () => {
                 <li> Amma assis sur chaise ergonomique 30 min - 25 euros</li>
                 <li> Shiatsu découverte 30 min - 30 euros</li>
                 <li> Shiatsu femme enceinte 45 min - 45 euros</li>
-                <li> Shiatsu traditionnelle 1h - 50 euros</li>
+                <li> Shiatsu traditionnel 1h - 50 euros</li>
 
             </ul>
             <br/>
