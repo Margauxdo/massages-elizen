@@ -153,4 +153,16 @@
         padding: 10px;
         position: relative;
     }
+
+}
+@media (max-width: 570px) {
+    .privateOrProfessionnal h2 {
+        background: #edbbb4;
+        color: #f3e9e7;
+        margin-top: 20px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-top: 10px;
+        text-align: left;
+    }
 }

@@ -53,7 +53,7 @@
 /* Responsivité : Mobile */
 @media (max-width: 576px) {
     .footer {
-        padding: 15px;
+        padding: 0px;
     }
 
     .footer .logoFooter img {
@@ -70,6 +70,9 @@
 
     .footer .label li a {
         font-size: 12px;
+    }
+    .reseaux{
+        flex-direction: column;
     }
 }
 

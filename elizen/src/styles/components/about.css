@@ -28,3 +28,8 @@ h3{
         margin-left: 10px;
     }
 }
+@media (max-width: 473px){
+    .text-massage{
+        margin-left: 00px;
+    }
+}
