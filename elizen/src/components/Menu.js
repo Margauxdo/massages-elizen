@@ -6,15 +6,21 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 const Menu = () => {
+
+
     const [showList, setShowList] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-    const toggleList = () => {
-        setShowList(!showList);
-    };
-
     const toggleBurger = () => {
         setIsMenuOpen(!isMenuOpen);
+    };
+
+    const showSubmenu = () => {
+        setShowList(true);
+    };
+
+    const hideSubmenu = () => {
+        setShowList(false);
     };
 
     return (
@@ -25,7 +31,10 @@ const Menu = () => {
             {/* Utilisation d'une classe conditionnelle pour le menu principal */}
             <ul className={`main-menu ${isMenuOpen ? 'open' : ''}`}>
                 <li><Link to="/">HomePage</Link></li>
-                <li onClick={toggleList}>
+                <li
+                    onMouseEnter={showSubmenu}
+                    onMouseLeave={hideSubmenu}
+                >
                     <Link to="/massages">Massages</Link>
                     {showList && (
                         <ul className="submenu">
