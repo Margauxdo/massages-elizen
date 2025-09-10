@@ -48,7 +48,7 @@ const Menu = () => {
                         </ul>
                     )}
                 </li>
-                <li><Link to="/price">Tarifs</Link></li>
+
                 <li><Link to="/contact">Contact</Link></li>
             </ul>
         </div>
